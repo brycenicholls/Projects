@@ -9,14 +9,14 @@
 #define OLED_DATA   4
 #define OLED_RESET  16
 
-#define NUM_LEDS 60
+#define NUM_LEDS 20
 #define LED_PIN 5
 
 CRGB g_LEDS[NUM_LEDS] = {0};
 
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C g_OLED(U8G2_R2, OLED_RESET, OLED_CLOCK, OLED_DATA);
 int g_lineHeight = 0;
-int g_brightness = 200;   // Brightness scale
+int g_brightness = 10;   // Brightness scale
 
 // Custom Libraries
 #include<marquee.h>
